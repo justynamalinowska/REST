@@ -1,0 +1,9 @@
+﻿@page "{quizId}/{userId}"
+@model Web.Pages.Summary
+@{
+    ViewData["Title"] = "Summary";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h3>Summary</h3>
+ <p>You answered correctly on @Model.CorrectAnswerCount out of @Model.TotalQuestions questions.</p>
+ <p>Your score is @Model.Percentage%.</p>
